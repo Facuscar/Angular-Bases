@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'bases';
+  title: string = 'Contador';
+  number: number = 10;
+
+  change( value : number ){
+    this.number += value;
+  }
 }
