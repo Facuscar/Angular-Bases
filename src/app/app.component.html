@@ -1,8 +1,10 @@
 
 <h1>{{ title }}</h1>
 
-<button (click)="change(1)"> + 1 </button>
+<h3>The base is : <strong>{{ base }}</strong></h3>
+
+<button (click)="change(base)"> + {{ base }} </button>
 
 <span>{{ number }}</span>
 
-<button (click)="change(-1)"> - 1 </button>
+<button (click)="change(-base)"> - {{ base }} </button>
