@@ -12,7 +12,6 @@ export class HeroListComponent {
   deleteHero(): void {
     if(this.heroes.length>0){
       this.deletedHeroes.push(this.heroes.pop()!);
-      console.log(this.deletedHeroes);
     }
   }
 }

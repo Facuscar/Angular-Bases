@@ -11,10 +11,13 @@
     Delete
 </button>
 
-<h4>Deleted heroes list</h4>
 
-<ul>
-    <li *ngFor="let deletedHero of deletedHeroes; let j = index">
-        {{ j+1 }} - {{deletedHero}}
-    </li>
-</ul>
+<div *ngIf="deletedHeroes.length > 0">
+    <h4>Deleted heroes list</h4>
+
+    <ul>
+        <li *ngFor="let deletedHero of deletedHeroes; let j = index">
+            {{ j+1 }} - {{deletedHero}}
+        </li>
+    </ul>
+</div>
