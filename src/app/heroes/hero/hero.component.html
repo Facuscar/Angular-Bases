@@ -7,4 +7,20 @@
 
     <td>Age: </td>
     <dd>{{ age }}</dd>
+
+    <td>Function: </td>
+    <dd>{{ getInfo() }}</dd>
+
+    <td>Function: </td>
+    <dd>{{ getInfo() }}</dd>
+
+    <td>Uppercase Name: </td>
+    <dd>{{ UppercasedName }}</dd>
+
+    <button (click)="changeName()">
+        Change name
+    </button>
+    <button (click)="changeAge()">
+        Change age
+    </button>
 </dl>
