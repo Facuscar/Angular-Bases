@@ -9,15 +9,6 @@
     </div>
 
     <div class="col">
-        <h3>New</h3>
-        <hr>
-
-        <form (ngSubmit)="add();">
-            <input type="text" placeholder="name" name="name" [(ngModel)]="new.name"/>
-            <input type="number" placeholder="power level" name="powerLevel" [(ngModel)]="new.powerLevel"/>
-            <button>
-                Add
-            </button>
-        </form>
+        <app-add [characters]="characters" [new]="new"></app-add>
     </div>
 </div>

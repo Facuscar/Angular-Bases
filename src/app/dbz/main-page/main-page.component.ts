@@ -10,22 +10,10 @@ import { Character } from '../interfaces/dbz.interface';
 export class MainPageComponent {
 
   characters: Character [] = [];
-  
 
   new: Character = {
-    name: '',
+    name: 'Goku',
     powerLevel: 0
-  }
-
-  add(): void {
-    if(this.new.name.trim().length > 0 && this.new.powerLevel >= 0) {
-      
-    }
-    this.characters.push(this.new);
-    this.new = {
-      name : '',
-      powerLevel : 0
-    }
   }
 
 }
