@@ -1,0 +1,13 @@
+<div *ngIf="characters.length > 0; else noCharacters">
+    <h3>Characters</h3>
+    <hr>
+    <ul>
+        <li *ngFor="let character of characters">
+            {{character.name}} - {{character.powerLevel | number}}
+        </li>
+    </ul>
+</div>
+
+<ng-template #noCharacters>
+    <h3>There is no characters yet.. Create one!</h3>
+</ng-template>
