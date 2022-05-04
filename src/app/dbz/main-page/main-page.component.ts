@@ -16,4 +16,8 @@ export class MainPageComponent {
     powerLevel: 0
   }
 
+  addNewCharacter( character: Character ){
+    this.characters.push(character);
+  }
+
 }
