@@ -18,7 +18,9 @@ export class DbzService {
         return [...this._characters];
     }
 
-    constructor() {
-        console.log('Service started');
+    constructor() {}
+
+    addNewCharacter( character: Character ){
+    this._characters.push( character );
     }
 }

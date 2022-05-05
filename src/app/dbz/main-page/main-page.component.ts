@@ -14,11 +14,7 @@ export class MainPageComponent {
     name: 'Goku',
     powerLevel: 0
   }
-
-  // addNewCharacter( character: Character ){
-  //   this.characters.push(character);
-  // }
-
+  
   constructor( private dbzService: DbzService ) {
   }
 }
